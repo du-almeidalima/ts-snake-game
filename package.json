@@ -1,0 +1,42 @@
+{
+  "name": "ts-snake-game",
+  "version": "1.0.0",
+  "description": "Snake Game made with TypeScript using Modules and OOP Concepts",
+  "main": "./src/app/main.ts",
+  "scripts": {
+    "serve": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/du-almeidalima/ts-snake-game.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Snake",
+    "Game",
+    "TS",
+    "OOP"
+  ],
+  "author": "Eduardo Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/du-almeidalima/ts-snake-game/issues"
+  },
+  "homepage": "https://github.com/du-almeidalima/ts-snake-game#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
