@@ -1,7 +1,15 @@
-export class Snake {
-    constructor( private size: number ) { }
+import { Direction, Piece, PieceType, Position } from "./types/game";
 
-    public sss(): void  {
-        console.log(`Hissss, I havesss ${this.size}`);
-    }
+export interface SnakeBody extends Piece {
+    type: PieceType.SNAKE_BODY
+}
+
+export default class Snake implements Piece{
+
+    public position: Position = { x: 0, y: 0 };
+    public type = PieceType.SNAKE;
+    public direction: Direction  = Direction.INITIAL;
+    public body: SnakeBody[] = [];
+
+    constructor() { }
 }

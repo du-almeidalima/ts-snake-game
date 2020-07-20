@@ -1,13 +1,12 @@
-import '../styles/main.scss'
+// Node
+if (typeof window === 'undefined') {
+    // TODO: Node Game
 
-document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(async () => {
-        const snakeModule = await import('./core/snake');
-        console.log(snakeModule.Snake);
-        // const littleSnake = new Snake(12);
+} else {
+    document.addEventListener('DOMContentLoaded', async () => {
+        // @ts-ignore
+        await import('../styles/main.scss')
 
-        const as: any = {};
 
-        as.hey();
-    }, 3000);
-});
+    })
+}
