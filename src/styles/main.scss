@@ -1,27 +1,26 @@
 body {
   margin: 0;
-  background: rgb(22, 24, 24)
+  background: rgb(22, 24, 24);
 }
 
-canvas {
+#game-canvas {
   background: gray;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%,25%);
+  display: block;
+  position: relative;
+  top: 35px;
+  margin: 0 auto;
 }
 
-h1{
+.game-title{
   text-align: center;
   color: antiquewhite;
-  margin-bottom: -50px;
 }
-.score{
+
+.score {
   color: white;
+  width: fit-content;
   font-family: fantasy;
-  position: fixed;
-  left: 50%;
-  top: 10%;
-  transform: translate(-50%, 0);
+  margin: 0 auto;
 }
 
 .score-num{
